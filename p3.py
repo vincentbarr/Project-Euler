@@ -4,19 +4,12 @@
 
 # Identify all prime factors of 600851475143
 
-divisorList = range(2,60)
-numberList = range(2,60)
-primeList = []
+n = 600851475143
+i = 2
+while i < n:
+    while n % i == 0:
+        n = n / i
+    i = i + 1
+print (n)
 
-for num in numberList:
-	divisor = 2
-	while divisor != num:
-		if num%divisor == 0:
-			break
-		else:
-			divisor = divisor +1
-			if num%divisor == 0:
-				break
-			else:
-			 if num - divisor == 1:
-			 	primeList.append(num) 
+# Helpful prime factorization concept: http://www.purplemath.com/modules/factnumb.htm
