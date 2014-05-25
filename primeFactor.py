@@ -2,6 +2,7 @@
 
 def primes(n):
     primeList = []
+    n = 12430123424243
     d = 2
     while d*d <= n:
         while (n % d) == 0:
@@ -12,3 +13,5 @@ def primes(n):
     if n > 1:
        primeList.append(n)
     return primeList
+
+primes(n=70442572800)
