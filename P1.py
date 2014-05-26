@@ -4,7 +4,7 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 # Practice
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+nums = range(1,11)
 mult35 = []
 i = 0
 total = 0
